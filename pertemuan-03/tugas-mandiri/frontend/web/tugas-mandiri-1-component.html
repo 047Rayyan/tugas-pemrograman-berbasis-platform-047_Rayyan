@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM1 - Kartu Profil Component Style</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 32px 16px;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            margin: 0 0 24px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .profile-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 24px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+        }
+
+        .avatar {
+            display: block;
+            flex-shrink: 0;
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #dbeafe;
+        }
+
+        .profile-info {
+            min-width: 0;
+        }
+
+        .profile-name {
+            margin: 0 0 6px;
+            font-size: 24px;
+        }
+
+        .profile-role {
+            margin: 0 0 8px;
+            color: #64748b;
+        }
+
+        .profile-nim {
+            margin: 0 0 12px;
+            color: #475569;
+            font-size: 14px;
+        }
+
+        .profile-description {
+            margin: 0 0 16px;
+            line-height: 1.6;
+        }
+
+        .profile-link {
+            display: inline-block;
+            padding: 10px 16px;
+            border-radius: 8px;
+            background: #2563eb;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .profile-link:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 480px) {
+            .profile-card {
+                align-items: flex-start;
+                gap: 14px;
+                padding: 16px;
+            }
+
+            .avatar {
+                width: 60px;
+                height: 60px;
+            }
+
+            .profile-name {
+                font-size: 20px;
+            }
+
+            .page-title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1 class="page-title">Kartu Profil Mahasiswa</h1>
+
+        <article class="profile-card" id="profil">
+            <img
+                class="avatar"
+                src="https://i.pravatar.cc/160?img=12"
+                alt="Foto profil Rayyan Ahmad"
+            >
+
+            <div class="profile-info">
+                <h2 class="profile-name">Rayyan</h2>
+
+                <p class="profile-role">Mahasiswa Informatika</p>
+
+                <p class="profile-nim">NIM: 2024520047</p>
+
+                <p class="profile-description">
+                    Tertarik pada pengembangan web, data, dan teknologi.
+                    Sedang mempelajari pengembangan aplikasi modern.
+                </p>
+
+                <a class="profile-link" href="#profil">
+                    Lihat Profil
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
