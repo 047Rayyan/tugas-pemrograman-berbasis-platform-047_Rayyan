@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM2 - Layout Responsif Mahasiswa</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-100 font-sans text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
+            <a href="#beranda"
+               class="text-xl font-bold text-blue-700">
+                RayyanSigma
+            </a>
+
+            <div class="flex gap-4 text-sm font-medium sm:gap-6 sm:text-base">
+                <a href="#beranda"
+                   class="text-slate-600 transition hover:text-blue-600">
+                    Beranda
+                </a>
+
+                <a href="#profil"
+                   class="text-slate-600 transition hover:text-blue-600">
+                    Profil
+                </a>
+
+                <a href="#kontak"
+                   class="text-slate-600 transition hover:text-blue-600">
+                    Kontak
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="beranda"
+            class="bg-gradient-to-r from-blue-700 to-indigo-700 text-white">
+        <div class="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+            <p class="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-200">
+                Mahasiswa Informatika
+            </p>
+
+            <h1 class="mb-5 text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
+                Selamat Datang di Profil Saya
+            </h1>
+
+            <p class="mb-8 max-w-2xl text-base leading-relaxed text-blue-100 md:text-lg">
+                Halo! Saya Rayyan, mahasiswa Informatika yang tertarik
+                pada pengembangan web, teknologi, dan pengolahan data.
+                Halaman ini dibuat sebagai latihan layout responsif
+                menggunakan Tailwind CSS.
+            </p>
+
+            <a href="#profil"
+               class="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-blue-700 transition hover:bg-blue-50 hover:shadow-lg">
+                Jelajahi Profil
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="profil" class="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
+
+        <div class="mb-8">
+            <h2 class="mb-3 text-2xl font-bold sm:text-3xl">
+                Tentang Saya
+            </h2>
+
+            <p class="max-w-2xl leading-relaxed text-slate-600">
+                Berikut beberapa informasi mengenai profil, kegiatan akademik,
+                dan minat saya di bidang teknologi.
+            </p>
+        </div>
+
+        <!-- Responsive Cards -->
+        <section class="grid grid-cols-1 gap-6 md:grid-cols-3">
+
+            <!-- Card 1 -->
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-2xl">
+                    👨‍💻
+                </div>
+
+                <h3 class="mb-3 text-xl font-bold">
+                    Biodata
+                </h3>
+
+                <p class="mb-4 leading-relaxed text-slate-600">
+                    Mahasiswa S1 Informatika yang mempelajari pemrograman,
+                    pengembangan aplikasi, dan pengelolaan data.
+                </p>
+
+                <ul class="space-y-2 text-sm text-slate-600">
+                    <li><span class="font-semibold">Nama:</span> Rayyan </li>
+                    <li><span class="font-semibold">Program:</span> Informatika</li>
+                    <li><span class="font-semibold">Minat:</span> Business Intelligence</li>
+                </ul>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-2xl">
+                    📚
+                </div>
+
+                <h3 class="mb-3 text-xl font-bold">
+                    Jadwal Kuliah
+                </h3>
+
+                <p class="mb-4 leading-relaxed text-slate-600">
+                    Kegiatan akademik membantu saya memahami konsep
+                    informatika dan menerapkannya melalui latihan.
+                </p>
+
+                <ul class="space-y-2 text-sm text-slate-600">
+                    <li>Algoritma dan Pemrograman</li>
+                    <li>Pengembangan Web</li>
+                    <li>Analisis Data</li>
+                </ul>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-2xl">
+                    🚀
+                </div>
+
+                <h3 class="mb-3 text-xl font-bold">
+                    Kegiatan
+                </h3>
+
+                <p class="mb-4 leading-relaxed text-slate-600">
+                    Saya senang mencoba teknologi baru, mengerjakan proyek,
+                    dan mengembangkan keterampilan teknis.
+                </p>
+
+                <ul class="space-y-2 text-sm text-slate-600">
+                    <li>Membuat proyek web</li>
+                    <li>Belajar analisis data</li>
+                    <li>Mengeksplorasi teknologi</li>
+                </ul>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-slate-900 text-slate-300">
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-8 text-center md:flex-row md:items-center md:justify-between md:px-6 md:text-left">
+            <p class="text-sm">
+                &copy; 2026 Rayyan. Dibuat untuk TM2 Pertemuan 3.
+            </p>
+
+            <a href="mailto:rayyan140108.com"
+               class="text-sm transition hover:text-white">
+                Hubungi Saya
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
